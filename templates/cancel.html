@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Cancelled — PlantCare</title>
+  {% if plausible_domain %}
+  <script defer data-domain="{{ plausible_domain }}" src="https://plausible.io/js/script.js"></script>
+  {% endif %}
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-50 min-h-screen flex items-center justify-center px-4">
+  <div class="bg-white rounded-2xl shadow-md p-10 max-w-md w-full text-center">
+    <div class="text-5xl mb-4">🌱</div>
+    <h1 class="text-2xl font-bold text-gray-700 mb-2">Payment cancelled</h1>
+    <p class="text-gray-500 mb-6">No worries — you can still use PlantCare for free and upgrade anytime.</p>
+    <a href="/" class="inline-block bg-green-600 text-white font-bold py-3 px-8 rounded-xl hover:bg-green-500 transition">
+      Back to my plants
+    </a>
+  </div>
+</body>
+</html>

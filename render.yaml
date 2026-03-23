@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: watering-schedules-multiple
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: PADDLE_API_KEY
+        sync: false
+      - key: PADDLE_PRICE_ID
+        sync: false
+      - key: PADDLE_SANDBOX
+        value: true
+      - key: PYTHON_VERSION
+        value: 3.12.0
+      - key: APP_SECRET_KEY
+        generateValue: true
